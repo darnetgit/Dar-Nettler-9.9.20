@@ -1,0 +1,15 @@
+<div class="forecastContainer">
+    <div class="forecast" *ngFor="let forecast of forecasts">
+        <h3>{{forecast.day}}</h3>
+        <h4>{{forecast.date}}</h4>
+        <p *ngIf="degreeM">{{forecast.minTempM}}<sup>&#9702;C</sup> - {{forecast.maxTempM}}<sup>&#9702;C</sup></p>
+        <p *ngIf="!degreeM" >{{forecast.minTempI}}<sup>&#9702;F</sup> - {{forecast.maxTempI}}<sup>&#9702;F</sup></p>
+        <p>Day:</p>
+        <img src='https://developer.accuweather.com/sites/default/files/{{forecast.dayIcon}}'>
+        <div>{{forecast.dayText}}</div>
+        <br><br>
+        <p>Night:</p>
+        <img src='https://developer.accuweather.com/sites/default/files/{{forecast.nightIcon}}'>
+        <div>{{forecast.nightText}}</div>
+    </div>
+</div>

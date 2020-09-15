@@ -1,0 +1,15 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" routerLink="/">Dar's Weather Page</a>
+    <div class="navbar-nav align-items-center" id="navbarNavAltMarkup">
+        <a class="nav-item nav-link" routerLink="/">Home</a>
+        <a class="nav-item nav-link" routerLink="/favorites">Favorites</a>
+        <div class="custom-switch pr-2">
+            <input type="checkbox" class="custom-control-input" id="degree">
+            <label class="custom-control-label" for="degree" (click)="switchDegree()">Switch Degree</label>
+        </div>
+        <div class="custom-switch">
+            <input type="checkbox" class="custom-control-input" id="theme">
+            <label class="custom-control-label" for="theme" (click)="switchTheme()">Switch Theme</label>
+      </div>
+    </div>
+  </nav>
